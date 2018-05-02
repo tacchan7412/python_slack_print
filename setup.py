@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='python_slack_print',
-    version='1.0.4',
+    version='1.0.5',
     description='Python print for stdout and slack',
     long_description=long_description,
     url='https://github.com/tacchan7412/python_slack_print',
