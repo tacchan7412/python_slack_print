@@ -1,5 +1,5 @@
 from slacker import Slacker
-import os
+import os, sys
 
 
 class SlackPrint():
@@ -9,8 +9,9 @@ class SlackPrint():
         self.channel = channel
         self.slacker = Slacker(access_token)
 
-    def print(self, text):
-        print(text)
+    def print(self, *objects, sep=' ', end='\n', file=sys.stdout, flush=False):
+        print(*objects, sep=sep, end=end, file=file, flush=flush)
+        text = sep.join([str(x) for x in objects])
         try:
             self.slacker.chat.post_message(
                 channel = self.channel,
