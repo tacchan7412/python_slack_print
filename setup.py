@@ -10,9 +10,9 @@ setup(
     version='1.0.0',
     description='Python print for stdout and slack',
     long_description=long_description,
-    long_description_content_type='text/markdown',
     url='https://github.com/tacchan7412/python_slack_print',
     author='Tatsuki Koga',
+    author_email='tacchan.04@gmail.com',
     license='MIT',
     packages=find_packages('slack_print'),
     install_requires=['slacker']
